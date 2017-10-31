@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/invie.css">
+    <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat:400,700" rel="stylesheet">
+    <title>Mis mejores guitarras</title>
+  </head>
+  <body>
+    <section id="portada" class="portada background"> <!--Portada  -->
+        <!-- Div para hacer Efectos visuales -->
+      <header id="header" class="header contenedor "> <!-- header --> <!--ID:Atributo de etiqueta, no se puede repetir -->
+            <figure class="logotipo"> <!-- logotipo -->
+               <img src="images/invie.png" width="186" height="60" alt="Invie logo"/>
+            </figure>
+            <nav class="menu">  <!-- menu -->
+              <ul><!-- lista desordenada -->
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="#guitarras">Guitarras</a>
+                </li>
+                <li>
+                  <a href="precios.html">Precios</a>
+                </li>
+              </ul>
+            </nav>
+        </header>
+      <div class=" contenedor">
+        <h1 class="titulo">Guitarras <span>invie</span>sibles</h1> <!-- titulo - se usa solamente una vez por pagina -->
+        <h3 class="tittle-a">La estrella de rock que siempre quisiste ser </h3> <!-- Van de h1 a h6 -->
+        <a class="boton_productos" href="#guitarras">Ver productos</a>
+      </div>
+    </section>
+    <section id="guitarras" class="guitarras contenedor"> <!--guitarras  -->
+      <h2>Nuestras guitarras </h2>
+        <article class="guitarra"> <!--guitarra 1 -->
+          <img class="derecha" src="images/invie-acustica.png" width="300" alt="Guitarra acustica"/>
+          <div class="contenedorguitarra_a">
+            <h3 class="tittle-b">Invie Acustica</h3>
+            <ol><!-- lista ordenada -->
+              <li>Vintange</li>
+              <li>Madera pura</li>
+              <li>Estuche</li>
+            </ol>
+          </div>
+        </article>  <!--guitarra 2 -->
+        <article class="guitarra b">
+          <img class="izquierda" src="images/invie-classic.png" width="300" alt="Guitarra clasic"/>
+          <div class="contenedorguitarra_b">
+            <h3 class="tittle-b">Invie Clasica</h3>
+              <ol><!-- lista ordenada -->
+                <li>Vintange</li>
+                <li>Madera pura</li>
+                <li>Estuche</li>
+            </ol>
+          </div>
+        </article>
+    </section>
+    <footer class="footer">
+      <div class="contenedor">
+        <div class="contacto">
+          <img src="images/invie-white.png" alt="Logotipo invie">
+          <a href="tel:+3045229910"><strong>Teléfono</strong> <span>3045229910</span></a>
+          <a href="mailto:invie@gmail.com"><strong>email</strong> <span>invie@gmail.com</span></a>
+        </div>
+<!-- En el formulario se ultiliza el nombre del for con un id con el mismo nombre
+porque si el usuario pica la palabra lo relaciona con el campo q debe seleccionar  -->
+        <form class="formulario">
+        <div class="col1">
+            <label for="nombre">Nombre</label>
+            <input type="text" required placeholder="Tu nombre" id="nombre" name="nombre" />
+            <label for="Email">E-mail</label>
+            <input type="email" required id="Email" name="email"/>
+            <div class="sexo">
+                <label for="mujer">
+                  <input type="radio" id="mujer" checked name="sexo" value="Mujer"> Mujer
+                </label>
+                <label for="hombre">
+                  <input type="radio" id="hombre" name="sexo" value="Hombre"> Hombre
+                </label>
+            </div>
+            <div class="intereses">
+                <label for="cotizacion">
+                  <input type="checkbox" checked id="cotizacion" name="intereses" value="cotizacion"> Cotización
+                </label>
+                <label for="reclamos">
+                  <input type="checkbox" id="reclamos" name="intereses" value="reclamos"> Reclamos
+                </label>
+                <label for="comentarios">
+                  <input type="checkbox" id="comentarios" name="intereses" value="comentarios"> Comentarios
+                </label>
+                <label for="otros">
+                  <input type="checkbox" id="otros" name="intereses" value="otros"> Otros
+                </label>
+          </div>
+        </div>
+        <div class="col2">
+              <label for="mensaje">Comentarios</label>
+              <textarea name="mensaje" id="mensaje" cols="30" rows="7"></textarea>
+  <!-- El submit es el boton de enviar el formulario y el value es la palabra "enviar"Tambien dentro de los impus checkbox y radioboton se necesitan esos values-->
+              <input type="submit" value="Enviar" class="boton_productos"/>
+          </div>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
